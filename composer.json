@@ -1,0 +1,34 @@
+{
+    "name": "ember/level_two",
+    "autoload": {
+        "psr-4": {
+            "Ember\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ember\\Blog\\UnitTests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kosmos258",
+            "email": "maksimowkirill@gmail.ru"
+        }
+    ],
+    "require": {
+        "symfony/polyfill-uuid": "^1.27",
+        "psr/container": "^2.0",
+        "monolog/monolog": "^3.3",
+        "vlucas/phpdotenv": "^5.5",
+        "symfony/console": "^6.2"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.21",
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^10.1"
+    },
+    "scripts": {
+        "test": "phpunit tests --testdox --colors"
+    }
+}
